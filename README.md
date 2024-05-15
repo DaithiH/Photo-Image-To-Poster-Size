@@ -6,6 +6,6 @@ This folder can be created at runtime using the following code:
 `if not os.path.exists(folder_name):`  
 `os.makedirs(folder_name)`
 
-this was created and in Jupyter notebook, so the image could be loaded using the local file path on the machine being used. Depending on the environment being used, it may be necessary to upload the image file into the runtime, or moved to the working directory where the script is located.
+This was created and ran in Jupyter notebook, so the image could be loaded using the local file path on the machine being used. Depending on the environment being used, it may be necessary to upload the image file into the runtime, or moved to the working directory where the script is located.
 
 As the poster can be a  arbitrary size, all parameters can be adjusted as desired for resolution of the scaled up image.
