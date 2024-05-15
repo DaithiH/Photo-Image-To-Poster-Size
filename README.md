@@ -1,7 +1,8 @@
 ## Resize Photo To Poster Size In Segments  
 This program will take in a photo and scale it up to an arbitrary poster size, using the Python Open CV library.  
 The poster will be created in numbered A4 size segments, which can be printed on a regular printer, and then assembled to form the poster on the wall. 
-The segments will be stored in a local folder. This folder can be created at runtime using the following code:
+The segments will be stored in a local folder. 
+This folder can be created at runtime using the following code:
 `if not os.path.exists(folder_out):`  
 `os.makedirs(folder_out)`
 
