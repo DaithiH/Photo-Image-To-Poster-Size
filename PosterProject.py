@@ -7,7 +7,7 @@ from IPython.display import Image, display
 import math
 import os
 
-pic_path = r'C:\Users\daveh\Pictures\Butterfly.jpg' # Local path to image
+pic_path = r'C:\Users\You\Library\YourImage.jpg' # Local path to image
 image_in = Image(filename= pic_path)
 # filename is a class constructor argument in IPython.display Image library
 img = PILImg.open(pic_path)
@@ -82,7 +82,6 @@ def main(Image_in, new_width, new_height, dpi_orig, dpi_new, save_path):
     dpi_orig and dpi_new: dots per inch of original and for the resized poster
     save_path where the poster will be saved as a file of A4 size sections
     """
-    #pic_path = r'C:\Users\daveh\Pictures\Butterfly.jpg' # Local path to image
 
     Image_in = cv2.imread(pic_path)
     if Image_in is None:
@@ -144,10 +143,10 @@ def main(Image_in, new_width, new_height, dpi_orig, dpi_new, save_path):
 
 
 if __name__ == "__main__":
-    pic_path = r'C:\Users\daveh\Pictures\Butterfly.jpg'
+    pic_path = r'C:\Users\You\Library\YourImage.jpg'
     dpi_orig = 72  # This is fixed at what the original image is
     dpi_new = 300  # This can be adjusted as desired
-    save_path = r'C:\Users\daveh\Pictures\Poster_Segments'
+    save_path = r'C:\Users\You\Library\Poster_Segments' # Segments saved in this folder
     new_width = 1050 # Poster width in mm (5 sheets)
     new_height = 1188 # Poster width in mm (4 sheets)
     main(pic_path, new_width, new_height, dpi_orig, dpi_new, save_path)
