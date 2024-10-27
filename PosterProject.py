@@ -76,10 +76,10 @@ def segmenting(image, segment_width, segment_height):
     return segments
     
 
-def main(Image_in, new_width, new_height, dpi_orig, dpi_new, save_path):
+def main(Image_in, new_width, new_height, dpi_new, save_path):
     """
     Image_in as path, new_width and new_height of poster in milimeters
-    dpi_orig and dpi_new: dots per inch of original and for the resized poster
+    dpi_new: dots per inch of the resized poster
     save_path where the poster will be saved as a file of A4 size sections
     """
 
@@ -144,12 +144,11 @@ def main(Image_in, new_width, new_height, dpi_orig, dpi_new, save_path):
 
 if __name__ == "__main__":
     pic_path = r'C:\Users\You\Library\YourImage.jpg'
-    dpi_orig = 72  # This is fixed at what the original image is
     dpi_new = 300  # This can be adjusted as desired
     save_path = r'C:\Users\You\Library\Poster_Segments' # Segments saved in this folder
     new_width = 1050 # Poster width in mm (5 sheets)
     new_height = 1188 # Poster width in mm (4 sheets)
-    main(pic_path, new_width, new_height, dpi_orig, dpi_new, save_path)
+    main(pic_path, new_width, new_height, dpi_new, save_path)
 
 
 
